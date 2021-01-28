@@ -20,45 +20,55 @@ header
     background-repeat: no-repeat;
     background-position:center;
     
+    
+}
+
+.headerLogo
+{
+    display:flex;
+    justify-content: left;
+    align-items:center;
+    flex-direction:row;
+    margin-left:15%
+}
+
+.headerLogo p
+{
+  color: RGB(103,216,205);
+  margin-left:5px;
+  font-size:30px;
 }
 
 .headerMain
 {
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
 }
-.headerlogo
-{
-display:flex;
-align-items:center;
-    
-}
-.headercaption
-{
-  display:flex;
-  color: RGB(103,216,205);
-  align-items: center;
-}
-.header .home
+.headerHome
 {
     color:RGB(103,216,205);
 }
 
-.header .say
+.headerSay
 {
     min-width: 100px;
 }
 
 nav 
 {
-    display:flex;
     margin:auto;
     max-width:900px;
-    border:1px solid white;
-    justify-content:flex-end;
-
-    
+    justify-self: center;
 }
+
+nav a,
+nav a:active
+{
+    text-decoration:none;
+    color:white;
+}
+
+
 nav ul
 {
     list-style: none;
@@ -151,8 +161,8 @@ nav li
 input[type=button] {
     color: #59dade; 
     border: 1px #59dade solid;
+    background-color:transparent;
     padding: 10px 20px 10px 20px;
-    background-color: white;
     font-weight: 900;
     transition: transform 0.5s; 
 
@@ -196,4 +206,70 @@ input[type=button] {
 
 .expertise {
 
+}
+
+.team {
+    background-image: url('images/bgk-header.png');
+    height:550px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+}
+
+.team h3
+
+{
+    padding-top:40px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+.teamContent {
+    margin:auto;
+    max-width:900px;
+    color: white;
+    text-align:center;
+    
+}
+
+.teamAll {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+.teamStaff {
+    width:200px;
+    height:300px;
+    border: 1px solid black;
+    display:flex;
+    flex-direction:column-reverse;
+    border:1px solid white;
+    
+}
+
+.teamStaffName {
+    padding-top:30px;
+    text-align:center;
+    height:100px;
+    color:white;
+    border-top:1px solid white;
+}
+
+.teamStaffPic{
+
+    height:200px;    
+}
+
+.team img {
+    height:199px;
+    width:199px;
+}
+
+.teamBar {
+
+    width:20px;
+    border-top:1px solid grey;
+    margin:auto;
+    padding-top:10px;
 }
