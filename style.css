@@ -3,6 +3,17 @@
     padding: 0; 
 }
 
+header 
+{
+    background-image: url('images/bgk-header.png');
+    height:670px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+    
+}
+
 html,body
 {
     width: 100%;
@@ -11,48 +22,61 @@ html,body
 
 }
 
-  main {
 
 
-    }
-
-header 
+.headerLogo
 {
-    background-color: RGB(47,47,83);
-
-
+    display:flex;
+    justify-content: left;
+    align-items:center;
+    flex-direction:row;
+    margin-left:15%
 }
 
-.header.logo
+.headerLogo p
 {
-    margin-left:10%;
-    display:inline-flex;
-
-}
-.header .caption
-{
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 25px;
-    color: RGB(103,216,205);
+  color: RGB(103,216,205);
+  margin-left:5px;
+  font-size:30px;
 }
 
-.header .home
+.headerMain
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.headerHome
 {
     color:RGB(103,216,205);
 }
 
-.header .say
+.headerSay
 {
     min-width: 100px;
 }
+
+nav 
+{
+    margin:auto;
+    max-width:900px;
+    justify-self: center;
+}
+
+nav a,
+nav a:active
+{
+    text-decoration:none;
+    color:white;
+}
+
+
 
 nav ul
 {
     list-style: none;
     display: inline-flex;
     flex-direction:row;
-    margin-left: 70%;
     align-items:center;
 }
 
@@ -62,17 +86,44 @@ nav li
     font-size:20px;
     font-weight:bold; 
     color:white;
+
+
 }
 
 .intro {
-    background-color: gray;
-    border: 2px black solid;
-    height: 500px;
-   
+    margin:auto;
+    display:flex;
+    
+}
+.intro .content {
+    margin-top:100px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    max-width:900px;
+    text-align:center;
+    color:white;
+    
+}
+.intro h2 {
+    font-size: 50px;
+    font-weight:bolder;
+    padding-bottom: 20px;
 }
 
+.intro .bar {
+    border-top: 2px solid RGB(103,216,205);
+    height:10px;
+    width:50px;
+    max-width:50px;
+    max-height:10px;
+}
 
-/* story section */
+.intro .link {
+    color: #59dade;
+    border:1px solid #59dade;
+ 
+}
 
 .story {
     margin: auto; 
@@ -114,8 +165,8 @@ nav li
 input[type=button] {
     color: #59dade; 
     border: 1px #59dade solid;
+    background-color:transparent;
     padding: 10px 20px 10px 20px;
-    background-color: white;
     font-weight: 900;
     transition: transform 0.5s; 
 }
@@ -215,6 +266,72 @@ hr {
 
 }
 
+.team {
+    background-image: url('images/bgk-header.png');
+    height:550px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+}
+
+.team h3
+
+{
+    padding-top:40px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+.teamContent {
+    margin:auto;
+    max-width:900px;
+    color: white;
+    text-align:center;
+    
+}
+
+.teamAll {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+.teamStaff {
+    width:200px;
+    height:300px;
+    border: 1px solid black;
+    display:flex;
+    flex-direction:column-reverse;
+    border:1px solid white;
+    
+}
+
+.teamStaffName {
+    padding-top:30px;
+    text-align:center;
+    height:100px;
+    color:white;
+    border-top:1px solid white;
+}
+
+.teamStaffPic{
+
+    height:200px;    
+}
+
+.team img {
+    height:199px;
+    width:199px;
+}
+
+.teamBar {
+
+    width:20px;
+    border-top:1px solid grey;
+    margin:auto;
+    padding-top:10px;
+}
+
 .icon img {
     left: 130px; 
     position: relative;
@@ -222,5 +339,3 @@ hr {
 
 
 
-    
-}
