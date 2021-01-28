@@ -1,16 +1,7 @@
 * {
     margin: 0;
     padding: 0; 
-    box-sizing: border-box;
 }
-
-body {
-    
-    width: 100vw;
-    margin: 0;
-
-
-  }
 
 header 
 {
@@ -22,6 +13,16 @@ header
     
     
 }
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
 
 .headerLogo
 {
@@ -44,6 +45,7 @@ header
     display:flex;
     justify-content: space-between;
 }
+
 .headerHome
 {
     color:RGB(103,216,205);
@@ -69,13 +71,13 @@ nav a:active
 }
 
 
+
 nav ul
 {
     list-style: none;
     display: inline-flex;
     flex-direction:row;
     align-items:center;
-
 }
 
 nav li 
@@ -87,6 +89,7 @@ nav li
 
 
 }
+
 .intro {
     margin:auto;
     display:flex;
@@ -121,6 +124,7 @@ nav li
     border:1px solid #59dade;
  
 }
+
 .story {
     margin: auto; 
     max-width: 900px; 
@@ -132,29 +136,29 @@ nav li
     font-size: 20px; 
     position: relative;
     left: 80px; 
+    color: #21233d;
 }
 
 .story img {
     float: left; 
-    margin: 0 40px 50px 40px; 
+    margin: 0 40px 0px 40px; 
 }
 
-.story .content {
+.story.content {
     padding-left: 200px; 
-    position: relative;;
-
 }
 
-.story .content p {
+.story.content  p {
     line-height: 1.5em;
     text-align: justify;
+    padding: 10px;
+    color: #21233d
 }
 
 .learnbtn {
-    position: absolute;;
     margin-top: 20px;
-    left: 43%;
-    position: sticky;
+    left: 42%;
+    position: absolute;
      
 }
 
@@ -165,7 +169,6 @@ input[type=button] {
     padding: 10px 20px 10px 20px;
     font-weight: 900;
     transition: transform 0.5s; 
-
 }
 
 .learnbtn input[type=button]:hover {
@@ -173,38 +176,93 @@ input[type=button] {
     transform: scale(0.9);
 }
 
+/* story section ends */ 
 
-
-.storyVideo {
-    background-image: url(images/bgk-middle.png);
-    margin-top: 90px;
-    margin-bottom: 100px;
-    height:100%; 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.storyVideo .playbtn {
-        position: absolute;
-        bottom: 240px;
-        left: 700px; 
-        transition: transform 0.5s; 
-      }
-
-.storyVideo .playbtn img {
+.storyVideo img {
     cursor:pointer;
-    transform: scale(0.9);
+    min-width: 100%; 
+    margin-top: 150px;
+    margin-bottom: 90px;
 }
 
-.storyVideo .playbtn:hover {
+.playbtn {
+    position: absolute;
+    top: 1165px;
+    left: 790px; 
+    transition: transform 0.5s; 
+    width: 8%; 
+    padding-bottom: 0px; 
+}
+
+.playbtn span {
+    color: white;
+    font-size: 22px; 
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto; 
+    padding-top: 0; 
+}
+
+
+.playbtn:hover {
     transform: scale(0.9)
 }
 
 .expertise {
+    margin-bottom: 200px;
+    align-items: center;
+}
+
+
+.expertise > h3 , p {
+    text-align: center;
+    padding-top: 15px;
+    color: #21233d
+
+}
+
+.expertise > h3 {
+    text-transform: uppercase;
+
+}
+
+hr {
+    width: 10%; 
+    align-items:  center;
+    margin:auto;
+    margin-top: 25px;
+    color: #21233d
+}
+
+.icons {
+    display: flex;
+    padding-top: 80px;
+    flex-flow: wrap;
+    margin: 0 20% 0 20%; 
+    justify-content: center;
+    
+}
+ 
+.icon {
+    width: 30%; 
+    border: 0.10px #f2f2f2 ridge;
+    padding-top: 80px;
+    
+    
+}
+
+.icon h4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #21233d
+}
+
+.icon p {
+    padding: 10px 40px 40px 40px; 
+    text-align: center;
+    color: #21233d
+    
 
 }
 
@@ -273,3 +331,11 @@ input[type=button] {
     margin:auto;
     padding-top:10px;
 }
+
+.icon img {
+    left: 130px; 
+    position: relative;
+    padding-bottom: 30px;
+
+
+
