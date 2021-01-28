@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+.intro {
+    background-color: gray;
+   
+}
+
+.story {
+    margin: auto; 
+    max-width: 900px; 
+}
+
+.story h3 {
+    padding: 100px 0px 20px 235px; 
+    text-transform: uppercase; 
+    font-size: 20px; 
+    position: relative;
+    left: 80px; 
+}
+
+.story img {
+    float: left; 
+    margin: 0 40px 50px 40px; 
+}
+
+.story .content {
+    padding-left: 200px; 
+    position: relative;;
+
+}
+
+.story .content p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.learnbtn {
+    position: absolute;;
+    margin-top: 20px;
+    left: 43%;
+    position: sticky;
+     
+}
+
+input[type=button] {
+    color: #59dade; 
+    border: 1px #59dade solid;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    font-weight: 900;
+    transition: transform 0.5s; 
+
+}
+
+.learnbtn input[type=button]:hover {
+    color: #59dade; 
+    transform: scale(0.9);
+}
+
+
+
+.storyVideo {
+    background-image: url('images/bgk-middle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 90px; 
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.storyVideo .playbtn {
+        position: absolute;
+        bottom: 240px;
+        left: 700px; 
+        transition: transform 0.5s; 
+      }
+
+.storyVideo .playbtn img {
+    cursor:pointer;
+
+}
+
+.storyVideo .playbtn:hover {
+    transform: scale(0.9)
+}
