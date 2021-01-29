@@ -3,6 +3,8 @@
     padding: 0; 
 }
 
+/* header and body section */
+
 header 
 {
     background-image: url('images/bgk-header.png');
@@ -86,9 +88,12 @@ nav li
     font-size:20px;
     font-weight:bold; 
     color:white;
-
-
 }
+
+/* header and body section ends */
+
+/* intro section */
+
 
 .intro {
     margin:auto;
@@ -125,10 +130,14 @@ nav li
  
 }
 
+/* intro section ends */
+
+
+/* story section */
+
 .story {
     margin: auto; 
     max-width: 900px; 
-    
 }
 
 .story h3 {
@@ -159,8 +168,7 @@ nav li
 .learnbtn {
     margin-top: 20px;
     left: 42%;
-    position: absolute;
-     
+    position: absolute;  
 }
 
 input[type=button] {
@@ -179,6 +187,9 @@ input[type=button] {
 }
 
 /* story section ends */ 
+
+
+/* storyVideo section */
 
 .storyVideo img {
     min-width: 100%; 
@@ -212,13 +223,18 @@ input[type=button] {
     transform: scale(0.9)
 }
 
+/* storyVideo section ends */
+
+
+/* expertise section */
+
 .expertise {
     margin-bottom: 100px;
     align-items: center;
 }
 
 
-.expertise  h3, p {
+.expertise > h3, .expertise p {
     text-align: center;
     padding-top: 15px;
     color: #21233d;
@@ -228,7 +244,9 @@ input[type=button] {
 .expertise > h3 {
     text-transform: uppercase;
     font-size: 25px;
-
+    text-align: center;
+    padding-top: 15px;
+    color: #21233d;
 }
 
 hr {
@@ -268,22 +286,23 @@ hr {
 .icon p {
     padding: 10px 40px 40px 40px; 
     text-align: center;
-    color: #21233d
-    
-
+    color: #21233d 
 }
+
+/* expertise section ends */
+
+
+/* team section */
 
 .team {
     background-image: url('images/bgk-header.png');
     height:550px;
     background-repeat: no-repeat;
     background-position:center;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 
 .team h3
-
 {
     padding-top:40px;
     margin-bottom:10px;
@@ -294,7 +313,6 @@ hr {
     max-width:900px;
     color: white;
     text-align:center;
-    
 }
 
 .teamAll {
@@ -310,7 +328,6 @@ hr {
     display:flex;
     flex-direction:column-reverse;
     border:1px solid white;
-    
 }
 
 .teamStaffName {
@@ -322,7 +339,6 @@ hr {
 }
 
 .teamStaffPic{
-
     height:200px;    
 }
 
@@ -332,7 +348,6 @@ hr {
 }
 
 .teamBar {
-
     width:20px;
     border-top:1px solid grey;
     margin:auto;
@@ -344,6 +359,8 @@ hr {
     position: relative;
     padding-bottom: 30px; 
 }
+
+/* team section ends */
 
 
 /* form section */
@@ -377,7 +394,6 @@ hr {
     width: 75%; 
     margin-top: 2%;
     border: 2px #f2f2f2 ridge;
-
 }
 
 .form input[value="SUBMIT"]  {
@@ -418,8 +434,12 @@ hr {
     padding: 20px;
     object-fit: cover; 
     margin: 10px 0 10px 100px;
-    
 }
+
+
+/* form section ends */
+
+/* footer */
 
 footer {
     background-image: url(/images/bgk-footer.png);
