@@ -48,7 +48,7 @@ header
   color: RGB(103,216,205);
   margin-left:5px;
   font-size:35px;
-  ;
+  
 }
 
 
@@ -131,6 +131,11 @@ nav li
     margin:20px 0px 20px 0px;
 }
 
+.intro p {
+    font-size: 18px;  
+    line-height: 1.9em;
+
+}
 
 /* intro section ends */
 
@@ -143,7 +148,7 @@ nav li
 }
 
 .story h3 {
-    padding: 100px 0px 20px 235px; 
+    padding: 80px 0px 20px 235px; 
     text-transform: uppercase; 
     font-size: 20px; 
     position: relative;
@@ -163,8 +168,9 @@ nav li
 .story.content  p {
     line-height: 1.5em;
     text-align: justify;
-    padding: 10px;
+    padding: 5px;
     color: #21233d;
+    font-size: 18px;
 }
 
 .learnbtn {
@@ -187,7 +193,8 @@ input[type=button] {
 .introButton input[type=button]:hover,
 .teamButton input[type=button]:hover
  {
-    color: #59dade; 
+    color: #fff;
+    background-color: #59dade;
     transform: scale(0.9);
 }
 
@@ -200,7 +207,7 @@ input[type=button] {
 .storyVideo img {
     min-width: 100%; 
     margin-top: 150px;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
 
 .playbtn{
@@ -218,7 +225,7 @@ input[type=button] {
     margin: auto; 
     text-transform: uppercase; 
     position: relative;
-    top: -300px; 
+    top: -200px; 
     left: 745px; 
     letter-spacing: 0.1em;
     
@@ -235,8 +242,10 @@ input[type=button] {
 /* expertise section */
 
 .expertise {
-    margin-bottom: 100px;
+    margin-top: 20px; 
+    margin-bottom: 80px; 
     align-items: center;
+    
 }
 
 
@@ -245,6 +254,7 @@ input[type=button] {
     text-align: center;
     padding-top: 15px;
     color: #21233d;
+    font-size: 18px; 
 
 }
 
@@ -266,7 +276,7 @@ hr {
 
 .icons {
     display: flex;
-    padding-top: 80px;
+    padding-top: 60px;
     flex-flow: wrap;
     margin: 0 20% 0 20%; 
     justify-content: center;
@@ -276,7 +286,7 @@ hr {
 .icon {
     width: 30%; 
     border: 0.10px #f2f2f2 ridge;
-    padding-top: 80px;
+    padding-top: 60px;
     transition: transform 5s; 
 }
 
@@ -310,6 +320,8 @@ hr {
     flex-direction: row;
     align-items:center;
     justify-content:center;
+    padding-bottom: 50px;
+
     
 
 }
@@ -396,6 +408,10 @@ p.dreamteam {
     width:199px;
 }
 
+.teamContent > p {
+    font-size: 20px;
+
+}
 
 
 
