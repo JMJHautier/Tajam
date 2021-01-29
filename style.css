@@ -3,16 +3,7 @@
     padding: 0; 
 }
 
-header 
-{
-    background-image: url('images/bgk-header.png');
-    height:670px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    
-    
-}
+
 
 html,body
 {
@@ -22,7 +13,25 @@ html,body
 
 }
 
+/*-- Header is made of two div (headMain & intro) */
 
+header 
+{
+    background-image: url('images/bgk-header.png');
+    height:670px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+}
+
+
+.headerMain
+{
+    display:flex;
+    justify-content: space-between;
+    height:10%;
+}
 
 .headerLogo
 {
@@ -37,14 +46,11 @@ html,body
 {
   color: RGB(103,216,205);
   margin-left:5px;
-  font-size:30px;
+  font-size:35px;
+  ;
 }
 
-.headerMain
-{
-    display:flex;
-    justify-content: space-between;
-}
+
 
 .headerHome
 {
@@ -75,9 +81,10 @@ nav a:active
 nav ul
 {
     list-style: none;
-    display: inline-flex;
+    display: flex;
     flex-direction:row;
     align-items:center;
+    flex-wrap:wrap;
 }
 
 nav li 
@@ -86,44 +93,39 @@ nav li
     font-size:20px;
     font-weight:bold; 
     color:white;
-
-
 }
+
+    
+
 
 .intro {
     margin:auto;
+    max-width:900px;
+    height:85%;
     display:flex;
-    
-}
-.intro .content {
-    margin-top:100px;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
-    max-width:900px;
-    text-align:center;
+    align-items: center;
+    padding-bottom:20px;
+
     color:white;
-    
+    text-align:center;
+}
+
+.introButton {
+    padding-top:50px;
 }
 .intro h2 {
     font-size: 50px;
     font-weight:bolder;
-    padding-bottom: 20px;
 }
 
-.intro .bar {
+.introBar {
     border-top: 2px solid RGB(103,216,205);
-    height:10px;
     width:50px;
-    max-width:50px;
-    max-height:10px;
+    margin:20px 0px 20px 0px;
 }
 
-.intro .link {
-    color: #59dade;
-    border:1px solid #59dade;
- 
-}
 
 .story {
     margin: auto; 
@@ -164,6 +166,7 @@ nav li
 
 input[type=button] {
     color: #59dade; 
+    text-transform: uppercase;
     border: 1px #59dade solid;
     background-color:transparent;
     padding: 10px 20px 10px 20px;
@@ -171,10 +174,14 @@ input[type=button] {
     transition: transform 0.5s; 
 }
 
-.learnbtn input[type=button]:hover {
+.learnbtn input[type=button]:hover,
+.introButton input[type=button]:hover,
+.teamButton input[type=button]:hover
+ {
     color: #59dade; 
     transform: scale(0.9);
 }
+
 
 /* story section ends */ 
 
@@ -215,7 +222,7 @@ input[type=button] {
 }
 
 
-.expertise > h3 , p {
+.expertise > h3 , .expertise p {
     text-align: center;
     padding-top: 15px;
     color: #21233d
@@ -268,10 +275,13 @@ hr {
 
 .team {
     background-image: url('images/bgk-header.png');
-    height:550px;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
     
 }
 
@@ -282,19 +292,46 @@ hr {
     margin-bottom:10px;
     text-transform:uppercase;
 }
-.teamContent {
+
+.teamBar {
+
+    width:50px;
+    border-top:2px solid grey;
     margin:auto;
+    padding:10px 0px 30px;
+}
+
+
+.teamContent {
+
     max-width:900px;
+    flex-grow:3;
+    display:flex;
+    flex-direction:column;
+    align-items:space-around;
+    justify-content:center;
     color: white;
     text-align:center;
-    
 }
 
 .teamAll {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    flex-wrap:wrap;
     align-items: center;
+}
+
+.teamStaffName a {
+    color:white;
+    text-decoration: none;
+}
+.teamStaffName a:hover {
+    color:#59dade;
+    transform: scale(2.3);
+}
+p.dreamteam {
+    padding:50px 0px 15px 0px;
 }
 .teamStaff {
     width:200px;
@@ -302,19 +339,26 @@ hr {
     border: 1px solid black;
     display:flex;
     flex-direction:column-reverse;
-    border:1px solid white;
+    border:1px solid RGB(121,121,142);;
     
 }
 
 .teamStaffName {
     padding-top:30px;
     text-align:center;
-    height:100px;
+    height:75px;
     color:white;
-    border-top:1px solid white;
+    text-transform:uppercase;
+    border-top:1px solid RGB(121,121,142);
 }
 
-.teamStaffPic{
+.teamStaffTitle {
+    padding-top:5px;
+    font-size:0.75em;
+    color: RGB(121,121,142);
+
+}
+.teamStaffPic {
 
     height:200px;    
 }
@@ -324,18 +368,12 @@ hr {
     width:199px;
 }
 
-.teamBar {
 
-    width:20px;
-    border-top:1px solid grey;
-    margin:auto;
-    padding-top:10px;
-}
 
 .icon img {
     left: 130px; 
     position: relative;
     padding-bottom: 30px;
-
+}
 
 
