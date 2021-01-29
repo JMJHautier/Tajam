@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 
@@ -14,7 +14,7 @@ html,body
 }
 
 /* header and body section */
-/*-- Header is made of two div (headMain & intro) */
+/*Header is made of two div (headMain & intro). headMain include logo and nav */
 
 header 
 {
@@ -49,7 +49,7 @@ header
   color: RGB(103,216,205);
   margin-left:5px;
   font-size:35px;
-  
+  font-weight:1;
 }
 
 
@@ -68,7 +68,6 @@ nav
 {
     margin:auto;
     max-width:900px;
-    justify-self: center;
 }
 
 nav a,
@@ -87,20 +86,20 @@ nav ul
     flex-direction:row;
     align-items:center;
     flex-wrap:wrap;
+    justify-self:flex-end;
 }
 
 nav li 
 {
-    margin-right:20px; 
-    font-size:20px;
+    padding-right:25px; 
+    font-size:18px;
     font-weight:bold; 
     color:white;
+    text-transform:uppercase;
 }
 
 
-/* header and body section ends */
-
-/* intro section */
+/* intro section (part of Header */
 
 
 
@@ -134,11 +133,11 @@ nav li
 
 .intro p {
     font-size: 18px;  
-    line-height: 1.9em;
+    line-height: 1.5em;
 
 }
 
-/* intro section ends */
+/* intro ends. Header ends */
 
 
 /* story section */
@@ -314,17 +313,12 @@ hr {
 
 .team {
     background-image: url('images/bgk-header.png');
-    background-repeat: no-repeat;
-    background-position:center;
     background-size: cover;
     display:flex;
     flex-direction: row;
     align-items:center;
     justify-content:center;
     padding-bottom: 50px;
-
-    
-
 }
 
 .team h3
@@ -407,6 +401,7 @@ p.dreamteam {
 .team img {
     height:199px;
     width:199px;
+    
 }
 
 .teamContent > p {
@@ -507,29 +502,47 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45vh; 
+    height:387px;
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
 .footerContent{
-    margin:auto;
     margin-bottom:10px;
     max-width:900px;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    align-items: space-around;
     color:white;
+
+
 }
 
 /* childs of footerContent */
+
+.footerAbout,
+.footerContact,
+.footerSocials
+{
+    width:300px;
+}
+
+.footerAbout,
+.footerContact
+{
+    padding-right:40px;
+}
+
+
 .footerAbout
 {
     display:flex;
     flex-direction:column;
-    max-width:25%;
 }
 
 .footerLogo
@@ -540,7 +553,6 @@ footer {
     flex-direction:row;
     flex-wrap:wrap;
     padding-bottom:10px;
-    
 }
 
 .footerContact,
@@ -569,28 +581,24 @@ footer {
 
     display:flex;
     flex-direction:row;
-    align-items: stretch;
+    justify-content:space-between;
+
 
 }
-
-.footerPlane {
-    background-color: white;
-    opacity:0.2;
-    padding: 10px;
-    margin-left:10px;
+.footerSocialsNews p,
+{
+    display:flex;
+    flex-direction:row;
+    
 }
-
-
-
 .footerSocialsNews [type = "submit"] {
 
     background-color: transparent;
     color: RGB(121,121,142);
     border: 1px solid RGB(121,121,142); 
-    padding: 15px 10px 15px 10px;
-    min-width:60%;
     width:100%;
-    
+    height:100%;
+    padding: 5px 20px 5px 20px;
 }
 
 .footerSocialsNews [type = "submit"]:hover,
@@ -598,32 +606,41 @@ footer {
     transform:scale(0.9);
 }
 
+.footerPlane {
+ 
+    background-color: white;
+    opacity:0.2;
+    padding: 5px 20px 5px 20px;
+}
+
+.footerSocialsMedia img
+{
+    margin-right:5px;
+}
+
+
+
 /* End of childs of footerContent */
 
 
 .footerCopyright {
-    margin:auto;
-    max-width:900px;
-    margin-top:30px;
+    margin-top: 80px;
     width:900px;
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
     color:white;
-    justify-self:flex-start;
+    justify-content:space-between;
 }
-.footerCopyright p {
-    padding-right:30px;
-}
+
+
+
 footer ul {
     list-style:none;
-    display:inline-flex;
-    padding-left:30px;
-    
+    display:inline-flex;    
 }
 
 footer li {
-    margin-right:10px;
+    padding-right:15px;
     text-transform:uppercase;
 }
 
