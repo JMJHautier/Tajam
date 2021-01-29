@@ -43,7 +43,8 @@ header
     margin-left:15%
 }
 
-.headerLogo p
+.headerLogo p,
+.footerLogo p
 {
   color: RGB(103,216,205);
   margin-left:5px;
@@ -487,10 +488,130 @@ p.dreamteam {
 /* footer */
 
 footer {
-    background-image: url(/images/bgk-footer.png);
+    background-image: url('images/bgk-footer.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 45vh; 
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    
 }
 
+.footerContent{
+    margin:auto;
+    margin-bottom:10px;
+    max-width:900px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    color:white;
+}
+
+/* childs of footerContent */
+.footerAbout
+{
+    display:flex;
+    flex-direction:column;
+    max-width:25%;
+}
+
+.footerLogo
+{
+    display:flex;
+    justify-content: left;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding-bottom:10px;
+    
+}
+
+.footerContact,
+.footerSocials
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.footerContact p
+{
+    padding-left:10px;
+}
+.footerContactAddress,
+.footerContactPhone {
+    display:flex;
+    flex-direction:row;
+    
+}
+
+.footerContactAddress img {
+    height:20px;
+}
+
+.footerSocialsNews {
+
+    display:flex;
+    flex-direction:row;
+    align-items: stretch;
+
+}
+
+.footerPlane {
+    background-color: white;
+    opacity:0.2;
+    padding: 10px;
+    margin-left:10px;
+}
+
+
+
+.footerSocialsNews [type = "submit"] {
+
+    background-color: transparent;
+    color: RGB(121,121,142);
+    border: 1px solid RGB(121,121,142); 
+    padding: 15px 10px 15px 10px;
+    min-width:60%;
+    width:100%;
+    
+}
+
+.footerSocialsNews [type = "submit"]:hover,
+.footerPlane:hover {
+    transform:scale(0.9);
+}
+
+/* End of childs of footerContent */
+
+
+.footerCopyright {
+    margin:auto;
+    max-width:900px;
+    margin-top:30px;
+    width:900px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    color:white;
+    justify-self:flex-start;
+}
+.footerCopyright p {
+    padding-right:30px;
+}
+footer ul {
+    list-style:none;
+    display:inline-flex;
+    padding-left:30px;
+    
+}
+
+footer li {
+    margin-right:10px;
+    text-transform:uppercase;
+}
+
+footer h4 {
+    text-transform:uppercase;
+}
