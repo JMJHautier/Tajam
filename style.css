@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-
-
 html,body
 {
     width: 100%;
@@ -112,7 +110,6 @@ nav li
     justify-content:center;
     align-items: center;
     padding-bottom:20px;
-
     color:white;
     text-align:center;
 }
@@ -143,40 +140,42 @@ nav li
 /* story section */
 
 .story {
-    margin: auto; 
-    max-width: 900px; 
+    max-width: 70%; 
+    margin: 50px auto; 
 }
 
 .story h3 {
-    padding: 80px 0px 20px 235px; 
     text-transform: uppercase; 
-    font-size: 20px; 
-    position: relative;
-    left: 80px; 
+    font-size: 30px; 
     color: #21233d;
+    padding-bottom: 0px;
+    margin-left: 390px;
+    
 }
 
 .story img {
     float: left; 
-    margin: 0 40px 0px 40px; 
+    object-fit: scale-down;
+    margin: 35px 80px;
 }
 
 .story.content {
-    padding-left: 200px; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin:auto;
+    padding: 30px 0px; 
 }
 
 .story.content  p {
     line-height: 1.5em;
     text-align: justify;
-    padding: 5px;
     color: #21233d;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.learnbtn {
-    margin-top: 20px;
-    left: 42%;
-    position: absolute;  
+.introButton.learnButton {
+    padding-left: 400px;
+    padding-top: 0px;
 }
 
 input[type=button] {
@@ -184,9 +183,9 @@ input[type=button] {
     text-transform: uppercase;
     border: 1px #59dade solid;
     background-color:transparent;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px;
     font-weight: 900;
-    transition: transform 0.5s; 
+    transition: transform 0.5s;
 }
 
 .learnbtn input[type=button]:hover,
@@ -204,37 +203,47 @@ input[type=button] {
 
 /* storyVideo section */
 
-.storyVideo img {
-    min-width: 100%; 
-    margin-top: 150px;
-    margin-bottom: 20px;
+.storyVideo {
+        background-image: url('images/bgk-middle.png');
+        height:500px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        margin: 50px auto; 
 }
 
+
 .playbtn{
-    position: absolute;
-    top: 1260px;
-    left: 790px; 
     transition: transform 0.5s; 
-    width: 8%; 
+}
+
+.playbtn img {
+    display:flex;
+    justify-content: left;
+    align-items:center;
+    flex-direction:row;
+    padding-left:45%; 
+    padding-top: 10%;
+    padding-bottom: 2%;
+
 }
 
 .storyVideo span {
     color: #f2f2f2;
     font-size: 22px; 
-    text-align: center;
-    margin: auto; 
     text-transform: uppercase; 
-    position: relative;
-    top: -200px; 
-    left: 745px; 
     letter-spacing: 0.1em;
-    
+    align-items:center;
+    justify-content: center;
+    padding-left:41%;
+    font-weight: 700; 
 }
 
 
 .playbtn:hover {
     transform: scale(0.9)
 }
+
 
 /* storyVideo section ends */
 
@@ -248,13 +257,11 @@ input[type=button] {
     
 }
 
-
-
 .expertise > h3, .expertise p {
     text-align: center;
     padding-top: 15px;
     color: #21233d;
-    font-size: 18px; 
+    font-size: 20px; 
 
 }
 
@@ -267,7 +274,7 @@ input[type=button] {
 }
 
 hr {
-    width: 10%; 
+    width: 50px; 
     align-items:  center;
     margin:auto;
     margin-top: 25px;
@@ -280,14 +287,15 @@ hr {
     flex-flow: wrap;
     margin: 0 20% 0 20%; 
     justify-content: center;
-    
 }
+
+
  
 .icon {
-    width: 30%; 
+    max-width: 300px; 
     border: 0.10px #f2f2f2 ridge;
     padding-top: 60px;
-    transition: transform 5s; 
+    transition: transform 5s;  
 }
 
 .icon img:hover {
@@ -297,13 +305,16 @@ hr {
 .icon h4 {
     text-transform: uppercase;
     text-align: center;
-    color: #21233d
+    color: #21233d;
+    font-size: 20px;
 }
+
 
 .icon p {
     padding: 10px 40px 40px 40px; 
     text-align: center;
-    color: #21233d 
+    color: #21233d; 
+    font-size: 18px;
 }
 
 /* expertise section ends */
@@ -456,13 +467,14 @@ p.dreamteam {
 .form input[value="SUBMIT"]  {
     background-color: transparent;
     color: #59dade;
-    border: 1px #59dade solid; 
+    border: 2.2px #59dade solid; 
     font-weight: 700;
     text-align: center;
     padding: 15px 30px 15px 30px;
     transition: transform 0.5s;  
-    width: 25%;
-    font-size: 16px;    
+    width: 150px;
+    font-size: 16px;   
+
 }
 
 .form input:focus {
@@ -481,7 +493,7 @@ p.dreamteam {
 
 .client { 
     flex: 1;
-    height: 40vh; 
+    min-height: 40vh; 
     margin-right: 10%;
 }
 
