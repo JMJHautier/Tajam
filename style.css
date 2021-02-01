@@ -516,33 +516,63 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< HEAD
     height:387px;
+=======
+
+
+>>>>>>> origin/main
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     
     
 }
 .footerContent{
+=======
+
+
+    padding-top:50px;
+    
+}
+
+
+.footerMain{
+    margin-left:0px;
+>>>>>>> origin/main
     margin-bottom:10px;
     max-width:900px;
+
     display:flex;
     flex-direction:row;
     align-items: space-around;
+<<<<<<< HEAD
     color:white;
+=======
+    flex-wrap:wrap;
+    color:white;
+}
+
+>>>>>>> origin/main
 
 
 }
 
-/* childs of footerContent */
+/* childs of footerMain */
 
 .footerAbout,
 .footerContact,
 .footerSocials
 {
+<<<<<<< HEAD
     width:300px;
+=======
+    flex: 1 1 250px;
+
+>>>>>>> origin/main
 }
 
 .footerAbout,
@@ -574,6 +604,7 @@ footer {
     display:flex;
     flex-direction:column;
     justify-content:space-around;
+    flex-wrap:wrap;
 }
 .footerContact p
 {
@@ -583,6 +614,8 @@ footer {
 .footerContactPhone {
     display:flex;
     flex-direction:row;
+    flex-wrap:wrap;
+
     
 }
 
@@ -595,12 +628,20 @@ footer {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    flex-wrap:wrap;
 
 
 }
+
 .footerSocialsNews p {
     display:flex;
     flex-direction:row;
+<<<<<<< HEAD
+=======
+    flex-wrap:wrap;
+
+    
+>>>>>>> origin/main
 }
 
 .footerSocialsNews [type = "submit"] {
@@ -625,6 +666,12 @@ footer {
     padding: 5px 20px 5px 20px;
 }
 
+.footerSocialsMedia
+{
+    display:flex;
+    flex-wrap:wrap;
+
+}
 .footerSocialsMedia img
 {
     margin-right:5px;
@@ -632,7 +679,7 @@ footer {
 
 
 
-/* End of childs of footerContent */
+/* End of childs of footerMain */
 
 
 .footerCopyright {
@@ -640,10 +687,24 @@ footer {
     width:900px;
     display:flex;
     flex-direction:row;
-    color:white;
     justify-content:space-between;
+    flex-wrap:wrap;
+    color:white;
 }
 
+@media screen and (max-width:480px) 
+{
+
+    .footerCopyright ul,
+.footerCopyright p
+{
+    
+    flex-basis:300px;
+    text-decoration:underline;
+
+}
+
+  }
 
 
 footer ul {
