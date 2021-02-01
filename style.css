@@ -616,14 +616,15 @@ footer {
 
 
 }
-.footerSocialsNews p
-{
+
+.footerSocialsNews p {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
 
     
 }
+
 .footerSocialsNews [type = "submit"] {
 
     background-color: transparent;
