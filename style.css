@@ -1,8 +1,6 @@
-*
-{
-    margin:0;
-    padding:0;
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
 html,body
@@ -10,6 +8,7 @@ html,body
     width: 100%;
     margin: 0px;
     padding: 0px;
+
 }
 
 /* header and body section */
@@ -22,6 +21,7 @@ header
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
+
     
 }
 
@@ -29,9 +29,9 @@ header
 .headerMain
 {
     display:flex;
-    position:sticky;
     justify-content: space-between;
     height:10%;
+
 }
 
 .headerLogo
@@ -40,10 +40,8 @@ header
     justify-content: left;
     align-items:center;
     flex-direction:row;
-    margin-left:15%;
-    margin-right:20px;
+    margin-left:15%
 }
-
 
 .headerLogo p,
 .footerLogo p
@@ -518,16 +516,15 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height:387px;
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    padding-top:50px;
+    
     
 }
-
-
 .footerContent{
     margin-bottom:10px;
     max-width:900px;
@@ -535,12 +532,9 @@ footer {
     flex-direction:row;
     align-items: space-around;
     color:white;
-    flex-wrap:wrap;
+
 
 }
-
-
-
 
 /* childs of footerContent */
 
@@ -548,17 +542,14 @@ footer {
 .footerContact,
 .footerSocials
 {
-    flex: 1 1 200px;
-
+    width:300px;
 }
 
 .footerAbout,
 .footerContact
 {
-    padding-right:20px;
-    padding-bottom:20px;
+    padding-right:40px;
 }
-
 
 
 .footerAbout
@@ -610,7 +601,6 @@ footer {
 .footerSocialsNews p {
     display:flex;
     flex-direction:row;
-    
 }
 
 .footerSocialsNews [type = "submit"] {
@@ -632,12 +622,12 @@ footer {
  
     background-color: white;
     opacity:0.2;
-    padding: 5px 20px 5px 20px; 
+    padding: 5px 20px 5px 20px;
 }
 
 .footerSocialsMedia img
 {
-    margin-right:5px; 
+    margin-right:5px;
 }
 
 
@@ -646,14 +636,13 @@ footer {
 
 
 .footerCopyright {
-    margin: 40px 0px 20px 0px;
+    margin-top: 80px;
     width:900px;
     display:flex;
     flex-direction:row;
     color:white;
     justify-content:space-between;
 }
-
 
 
 
