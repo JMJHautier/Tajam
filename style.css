@@ -516,23 +516,13 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-<<<<<<< HEAD
-    height:387px;
-=======
 
 
->>>>>>> origin/main
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-    
-    
-}
-.footerContent{
-=======
 
 
     padding-top:50px;
@@ -542,24 +532,16 @@ footer {
 
 .footerMain{
     margin-left:0px;
->>>>>>> origin/main
     margin-bottom:10px;
     max-width:900px;
 
     display:flex;
     flex-direction:row;
     align-items: space-around;
-<<<<<<< HEAD
-    color:white;
-=======
     flex-wrap:wrap;
     color:white;
 }
 
->>>>>>> origin/main
-
-
-}
 
 /* childs of footerMain */
 
@@ -567,12 +549,8 @@ footer {
 .footerContact,
 .footerSocials
 {
-<<<<<<< HEAD
-    width:300px;
-=======
     flex: 1 1 250px;
 
->>>>>>> origin/main
 }
 
 .footerAbout,
@@ -636,12 +614,9 @@ footer {
 .footerSocialsNews p {
     display:flex;
     flex-direction:row;
-<<<<<<< HEAD
-=======
     flex-wrap:wrap;
 
     
->>>>>>> origin/main
 }
 
 .footerSocialsNews [type = "submit"] {
