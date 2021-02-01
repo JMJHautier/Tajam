@@ -1,6 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
+*
+{
+    margin:0;
+    padding:0;
+
 }
 
 html,body
@@ -8,7 +10,6 @@ html,body
     width: 100%;
     margin: 0px;
     padding: 0px;
-
 }
 
 /* header and body section */
@@ -28,6 +29,7 @@ header
 .headerMain
 {
     display:flex;
+    position:sticky;
     justify-content: space-between;
     height:10%;
 }
@@ -38,8 +40,10 @@ header
     justify-content: left;
     align-items:center;
     flex-direction:row;
-    margin-left:15%
+    margin-left:15%;
+    margin-right:20px;
 }
+
 
 .headerLogo p,
 .footerLogo p
@@ -514,15 +518,15 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:387px;
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    
+    padding-top:50px;
     
 }
+
 
 .footerContent{
     margin-bottom:10px;
@@ -531,9 +535,12 @@ footer {
     flex-direction:row;
     align-items: space-around;
     color:white;
-
+    flex-wrap:wrap;
 
 }
+
+
+
 
 /* childs of footerContent */
 
@@ -541,14 +548,17 @@ footer {
 .footerContact,
 .footerSocials
 {
-    width:300px;
+    flex: 1 1 200px;
+
 }
 
 .footerAbout,
 .footerContact
 {
-    padding-right:40px;
+    padding-right:20px;
+    padding-bottom:20px;
 }
+
 
 
 .footerAbout
@@ -622,12 +632,12 @@ footer {
  
     background-color: white;
     opacity:0.2;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px 5px 20px; 
 }
 
 .footerSocialsMedia img
 {
-    margin-right:5px;
+    margin-right:5px; 
 }
 
 
@@ -636,13 +646,14 @@ footer {
 
 
 .footerCopyright {
-    margin-top: 80px;
+    margin: 40px 0px 20px 0px;
     width:900px;
     display:flex;
     flex-direction:row;
     color:white;
     justify-content:space-between;
 }
+
 
 
 
