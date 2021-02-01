@@ -597,12 +597,12 @@ footer {
 
 
 }
-.footerSocialsNews p,
-{
+.footerSocialsNews p {
     display:flex;
     flex-direction:row;
     
 }
+
 .footerSocialsNews [type = "submit"] {
 
     background-color: transparent;
