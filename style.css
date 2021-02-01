@@ -518,37 +518,42 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+
+
     padding-top:50px;
     
 }
 
 
-.footerContent{
+.footerMain{
+    margin-left:0px;
     margin-bottom:10px;
     max-width:900px;
+
     display:flex;
     flex-direction:row;
     align-items: space-around;
-    color:white;
     flex-wrap:wrap;
-
+    color:white;
 }
 
 
 
 
-/* childs of footerContent */
+/* childs of footerMain */
 
 .footerAbout,
 .footerContact,
 .footerSocials
 {
-    flex: 1 1 200px;
+    flex: 1 1 250px;
 
 }
 
@@ -583,6 +588,7 @@ footer {
     display:flex;
     flex-direction:column;
     justify-content:space-around;
+    flex-wrap:wrap;
 }
 .footerContact p
 {
@@ -592,6 +598,8 @@ footer {
 .footerContactPhone {
     display:flex;
     flex-direction:row;
+    flex-wrap:wrap;
+
     
 }
 
@@ -604,12 +612,16 @@ footer {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    flex-wrap:wrap;
 
 
 }
+
 .footerSocialsNews p {
     display:flex;
     flex-direction:row;
+    flex-wrap:wrap;
+
     
 }
 
@@ -635,6 +647,12 @@ footer {
     padding: 5px 20px 5px 20px; 
 }
 
+.footerSocialsMedia
+{
+    display:flex;
+    flex-wrap:wrap;
+
+}
 .footerSocialsMedia img
 {
     margin-right:5px; 
@@ -642,7 +660,7 @@ footer {
 
 
 
-/* End of childs of footerContent */
+/* End of childs of footerMain */
 
 
 .footerCopyright {
@@ -650,10 +668,24 @@ footer {
     width:900px;
     display:flex;
     flex-direction:row;
-    color:white;
     justify-content:space-between;
+    flex-wrap:wrap;
+    color:white;
 }
 
+@media screen and (max-width:480px) 
+{
+
+    .footerCopyright ul,
+.footerCopyright p
+{
+    
+    flex-basis:300px;
+    text-decoration:underline;
+
+}
+
+  }
 
 
 
